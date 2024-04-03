@@ -1,7 +1,8 @@
 body {
   background-color: black;
   font-family: Arial, sans-serif;
-  color: white;
+  color: white;    
+  overflow-y: scroll; /* Enable vertical scrolling */
 }
 
 header {
