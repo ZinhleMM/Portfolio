@@ -1,57 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+/* Setting and styling the page background */
+body {
+  background-image: url('../assets/projects-bg.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: black;
+  font-family: Arial, sans-serif;
+  color: white;
+  overflow-y: scroll; /* Enable vertical scrolling */
+}
 
-  <main>
-    <section id="home">
-      <div class="preview">
-        <img src="preview.gif" alt="Project Preview">
-      </div>
-      <div class="content">
-        <h2>Project Name</h2>
-        <p class="blurb">Short description of the project.</p>
-        <div class="hashtags">
-          <span>#WebDevelopment</span>
-          <span>#HTML</span>
-          <span>#CSS</span>
-          <span>#JavaScript</span>
-        </div>
-        <a href="project-github-link" class="github-link">GitHub</a>
-      </div>
-    </section>
+/* Main tag styling */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  margin-top: 50px;
+  height: 100%;
+}
 
-    <section id="projects">
-      <!-- Other project sections with similar structure -->
-    </section>
+header {
+  border-bottom: 2px solid aqua;
+  padding: 20px 0;
+}
 
-    <section id="about">
-      <!-- About section with personal information -->
-    </section>
+nav {
+  text-align: center;
+}
 
-    <section id="contact">
-      <!-- Contact form or contact information -->
-    </section>
-  </main>
+.nav-link {
+  font-size: 24px;
+  color: aqua;
+  margin: 0 10px;
+  text-decoration: none;
+}
 
-  <footer>
-    <p>&copy; 2024 My Portfolio</p>
-  </footer>
-</body>
-</html>
+.nav-link:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.welcome-section {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: center;
+  padding: 0 20px;
+  
+}
+
+
+.project-preview {
+  border: 2px solid aqua;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: center;
+
+}
+
+.project-preview:hover {
+  border-color: lightblue;
+}
+
+/* Add more styles for project previews, gifs, etc. */
