@@ -1,7 +1,24 @@
+/* Setting and styling the page background */
 body {
+  background-image: url('../assets/projects-bg.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-color: black;
   font-family: Arial, sans-serif;
   color: white;
+  overflow-y: scroll; /* Enable vertical scrolling */
+}
+
+/* Main tag styling */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  margin-top: 50px;
+  height: 100%;
 }
 
 header {
@@ -32,14 +49,18 @@ nav {
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: center;
   padding: 0 20px;
+  
 }
+
 
 .project-preview {
   border: 2px solid aqua;
   padding: 20px;
   margin-bottom: 20px;
+  position: center;
+
 }
 
 .project-preview:hover {
